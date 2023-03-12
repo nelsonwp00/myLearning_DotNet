@@ -7,8 +7,8 @@ to study .NET Framework and .NET
 | .NET Framework | 4.7.2 | DotNetFrameworkApp |
 | .NET | 6.0 | AspDotNetCoreApp |
 ---
-Roadmap on building a .NET Framework Console App as a Server: 
-1. Use ADO.NET to build a Data Persistence Layer
+Roadmap on building a microservice : 
+1. Use ADO.NET to build a Data Persistence Layer (in DotNetFrameworkApp)
     - use Database First Development in Entity Data Model
 2. Add CRUD APIs
 ---
