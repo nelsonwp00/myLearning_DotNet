@@ -1,4 +1,3 @@
-# myLearning_Spring
 to study .NET Framework and .NET
 > Start Simple and Iterate
 
@@ -8,8 +7,9 @@ to study .NET Framework and .NET
 | .NET | 6.0 | AspDotNetCoreApp |
 ---
 Roadmap on building a microservice : 
-1. Use ADO.NET to build a Data Persistence Layer (in DotNetFrameworkApp)
-    - use Database First Development in Entity Data Model
+1. Use Entity Framework to build a Data Persistence Layer (in DotNetFrameworkApp)
+    - use Database First approach with Entity Data Model
+   
 2. Add CRUD APIs
 ---
  To be explored and integrated into the project:
