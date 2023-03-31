@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameworkApp", "DotNe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspDotNetCoreApp", "AspDotNetCoreApp\AspDotNetCoreApp.csproj", "{6ED71B7D-6FD9-4BFB-9BBC-F84258F6BDC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{1E07E975-F805-410B-BAD0-F4AA324C3107}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{1E07E975-F805-410B-BAD0-F4AA324C3107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealTimeApp", "RealTimeApp\RealTimeApp.csproj", "{8A9E6A25-7AE0-446E-8B26-8B03CD3418A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealTimeClient", "RealTimeClient\RealTimeClient.csproj", "{E7013177-2EE3-4E88-A684-BB780DDF8934}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{1E07E975-F805-410B-BAD0-F4AA324C3107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E07E975-F805-410B-BAD0-F4AA324C3107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E07E975-F805-410B-BAD0-F4AA324C3107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A9E6A25-7AE0-446E-8B26-8B03CD3418A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9E6A25-7AE0-446E-8B26-8B03CD3418A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9E6A25-7AE0-446E-8B26-8B03CD3418A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9E6A25-7AE0-446E-8B26-8B03CD3418A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7013177-2EE3-4E88-A684-BB780DDF8934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7013177-2EE3-4E88-A684-BB780DDF8934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7013177-2EE3-4E88-A684-BB780DDF8934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7013177-2EE3-4E88-A684-BB780DDF8934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

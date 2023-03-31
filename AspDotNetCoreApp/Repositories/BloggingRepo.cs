@@ -1,6 +1,4 @@
 ﻿using AspDotNetCoreApp.Data;
-using AspDotNetCoreApp.DataAccess;
-using AspDotNetCoreApp.DataAccess.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace AspDotNetCoreApp.Repositories

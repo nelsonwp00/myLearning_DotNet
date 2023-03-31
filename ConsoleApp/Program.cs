@@ -11,7 +11,6 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            DictDemo dd = new DictDemo();
         }
     }
 }
