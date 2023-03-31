@@ -1,3 +1,4 @@
+using AspDotNetCoreApp;
 using AspDotNetCoreApp.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,9 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<DefaultContext>(
-    options => options.UseSqlServer(
-        builder.Configuration.GetConnectionString("Default")));
+// Depdency Injection of DbContext
+// DbContext lifecycle is per request scope
+builder.Services.AddDbContext<AdoDotnetExampleContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

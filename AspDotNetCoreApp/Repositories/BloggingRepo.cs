@@ -1,4 +1,5 @@
-﻿using AspDotNetCoreApp.DataAccess;
+﻿using AspDotNetCoreApp.Data;
+using AspDotNetCoreApp.DataAccess;
 using AspDotNetCoreApp.DataAccess.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,9 +7,9 @@ namespace AspDotNetCoreApp.Repositories
 {
     public class BloggingRepo
     {
-        private readonly DefaultContext db;
+        private readonly AdoDotnetExampleContext db;
 
-        public BloggingRepo(DefaultContext db)
+        public BloggingRepo(AdoDotnetExampleContext db)
         {
             this.db = db;
         }

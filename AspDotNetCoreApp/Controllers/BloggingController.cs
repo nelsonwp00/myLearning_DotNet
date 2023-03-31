@@ -1,4 +1,5 @@
-﻿using AspDotNetCoreApp.DataAccess;
+﻿using AspDotNetCoreApp.Data;
+using AspDotNetCoreApp.DataAccess;
 using AspDotNetCoreApp.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -15,26 +16,23 @@ namespace AspDotNetCoreApp.Controllers
         private readonly BloggingRepo Repo;
 
         // Dependency Injection
-        public BloggingController(DefaultContext db) 
+        public BloggingController(AdoDotnetExampleContext db) 
         {
             Repo = new BloggingRepo(db);
         }
 
-        // GET: api/<BloggingController>
         [HttpGet]
         public IEnumerable<BlogDTO> Get()
         {
             return Repo.GetAll();
         }
 
-        // GET api/<BloggingController>/5
         [HttpGet("{id}")]
         public BlogDTO Get(int id)
         {
             return Repo.Get(id);
         }
 
-        // POST api/<BloggingController>
         [HttpPost]
         public HttpResponseMessage Add([FromBody] BlogDTO dto)
         {
@@ -49,13 +47,11 @@ namespace AspDotNetCoreApp.Controllers
 
         }
 
-        // PUT api/<BloggingController>/5
         [HttpPut("{id}")]
         public void Update(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<BloggingController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
